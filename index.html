@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fontSizeGenerator</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"></link>
+    <script src="js/algebra-0.2.6.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Font Size Generator</h1>
+        <div class="container">
+            <h2 class="container-title">기준 1</h2>
+            <div class="input-container">
+                <div class="input-item">
+                    <h3>화면 너비</h3>
+                    <input id="width1" inputmode="numeric" pattern="[0-9]*" type="text" onkeypress="onlyNumber()" oninput="calculation()">
+                </div>
+                <div class="input-item">
+                    <h3>희망 폰트 사이즈</h3>
+                    <input id="targetSize1" inputmode="numeric" pattern="[0-9]*" type="text" onkeypress="onlyNumber()" oninput="calculation()">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title">기준 2</h2>
+            <div class="input-container">
+                <div class="input-item">
+                    <h3>화면 너비</h3>
+                    <input id="width2" inputmode="numeric" pattern="[0-9]*" type="text" onkeypress="onlyNumber()" oninput="calculation()">
+                </div>
+                <div class="input-item">
+                    <h3>희망 폰트 사이즈</h3>
+                    <input id="targetSize2" inputmode="numeric" pattern="[0-9]*" type="text" onkeypress="onlyNumber()" oninput="calculation()">
+                </div>
+            </div>
+        </div>
+        <div class="container-answer">
+            <p id="answer">항목을 입력해주세요</p>
+            <button id="button" data-clipboard-action="copy" data-clipboard-target="#answer">클립보드에 저장하기</button>
+        </div>
+        <p style="text-align: center;margin-top:3rem;">made by GSH</p>
+    </div>
+</body>
+
+</html>
+<script src="js/clipboard.js"></script>
+<script src="js/onlyNumber.js"></script>
+<script src="js/calculator.js"></script>
