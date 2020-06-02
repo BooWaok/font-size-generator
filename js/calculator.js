@@ -21,4 +21,6 @@ function calculation() {
     // console.log("y = " + pxAnswer.toFixed(2));
 
     document.getElementById("answer").innerHTML = "font-size: calc(" + vwAnswer.valueOf().toFixed(2) + "vw" + " + " + pxAnswer.toFixed(2) + "px);"
+
+    document.getElementById("example").style.fontSize = "calc(" + vwAnswer.valueOf().toFixed(2) + "vw" + " + " + pxAnswer.toFixed(2) + "px)";
 }

@@ -80,6 +80,7 @@ h2 {
         background-color: $bg95;
         padding: 1.5rem 0;
         border-radius: 8px;
+        margin-bottom:2em;
         p {
             margin-bottom: 1rem;
         }
@@ -92,6 +93,18 @@ h2 {
             background-color: $bg100;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             cursor: pointer;
+        }
+    }
+    .container-example{
+        display:flex;
+        flex-direction: column;
+        .preview{
+            margin-bottom:0.5rem;
+            font-weight: 700;
+        }
+        #example{
+            font-weight: 700;
+            font-size:0;
         }
     }
 }
